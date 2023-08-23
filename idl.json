@@ -110,6 +110,118 @@
       ]
     },
     {
+      "name": "openDcaOnBehalf",
+      "accounts": [
+        {
+          "name": "dca",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "user",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "payer",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "inputMint",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "outputMint",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "userAta",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "inAta",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "outAta",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "eventAuthority",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "program",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "applicationIdx",
+          "type": "u64"
+        },
+        {
+          "name": "inAmount",
+          "type": "u64"
+        },
+        {
+          "name": "inAmountPerCycle",
+          "type": "u64"
+        },
+        {
+          "name": "cycleFrequency",
+          "type": "i64"
+        },
+        {
+          "name": "minPrice",
+          "type": {
+            "option": "u64"
+          }
+        },
+        {
+          "name": "maxPrice",
+          "type": {
+            "option": "u64"
+          }
+        },
+        {
+          "name": "startAt",
+          "type": {
+            "option": "i64"
+          }
+        },
+        {
+          "name": "closeWsolInAta",
+          "type": {
+            "option": "bool"
+          }
+        }
+      ]
+    },
+    {
       "name": "closeDca",
       "accounts": [
         {
