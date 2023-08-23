@@ -1,9 +1,20 @@
 [package]
-name = "dca-cpi"
+name = "jupiter-dca"
 version = "0.1.0"
 edition = "2021"
+description = "Anchor CPI client for the Jupiter program."
+authors = ["Josh Teng <josh@raccoons.dev>"]
+repository = "https://github.com/jup-ag/dca-cpi"
+license = "Apache-2.0"
+keywords = ["solana", "anchor", "cpi", "jupiter", "dca"]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[features]
+default = ["cpi"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
 
 [dependencies]
 anchor-gen = "0.3.1"
+anchor-lang = ">=0.28.0"
