@@ -110,7 +110,7 @@
       ]
     },
     {
-      "name": "openDcaOnBehalf",
+      "name": "openDcaV2",
       "accounts": [
         {
           "name": "dca",
@@ -119,7 +119,7 @@
         },
         {
           "name": "user",
-          "isMut": true,
+          "isMut": false,
           "isSigner": true
         },
         {
@@ -211,12 +211,6 @@
           "name": "startAt",
           "type": {
             "option": "i64"
-          }
-        },
-        {
-          "name": "closeWsolInAta",
-          "type": {
-            "option": "bool"
           }
         }
       ]
@@ -1354,5 +1348,8 @@
       "name": "UnexpectedSwapInstruction",
       "msg": "Did not call jup swap"
     }
-  ]
+  ],
+  "metadata": {
+    "address": "81SjLfzK5T3R6Lj6jGt9oTRtbm2Gn4UjJs8DMzxirV19"
+  }
 }
