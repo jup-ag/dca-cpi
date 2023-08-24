@@ -17,4 +17,4 @@ cpi = ["no-entrypoint"]
 
 [dependencies]
 anchor-gen = "0.3.1"
-anchor-lang = { git = "https://github.com/coral-xyz/anchor.git", rev = "c7c7319" }
+anchor-lang = { version = "0.28.0" }
