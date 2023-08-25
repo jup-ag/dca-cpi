@@ -1348,8 +1348,5 @@
       "name": "UnexpectedSwapInstruction",
       "msg": "Did not call jup swap"
     }
-  ],
-  "metadata": {
-    "address": "81SjLfzK5T3R6Lj6jGt9oTRtbm2Gn4UjJs8DMzxirV19"
-  }
+  ]
 }
